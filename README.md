@@ -3,7 +3,7 @@
 </br>
 
 ## ***About***
-A simple ecommerce web app developed with React.js at the client side and Node.js at the server side.
+A simple ecommerce web app developed with **React.js** at the client side and **Node.js** at the server side.
 
 * **Server** - implements fillter, search and sort products and also product pagination.
 
