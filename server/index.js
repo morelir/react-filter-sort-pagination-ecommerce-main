@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const { isNil } = require("lodash");
+const path = require("path");
 const data = require("./data");
 
 const app = express();
@@ -8,6 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join('public')))
 
 const LIMIT = 8;
 
@@ -120,13 +122,20 @@ app.get("/items", (req, res) => {
   let paginateData = paginate(filteredProducts, req.query);
   paginateData["products"] = paginateData["results"];
   delete paginateData["results"];
-  
+
   // fake the request to a backend search service like solr or elasticsearch
   setTimeout(() => {
     res.json({ ...paginateData, maxPrice });
   }, 250);
 });
 
-app.listen(8888, () => {
-  console.info("server listening on: 8888");
+
+app.use((req,res,next)=>{
+  res.sendFile(path.resolve(__dirname,'public','index.html'))
+})
+
+const PORT = process.env.PORT || 8888;
+
+app.listen(PORT, () => {
+  console.info("server listening on: " + PORT);
 });
