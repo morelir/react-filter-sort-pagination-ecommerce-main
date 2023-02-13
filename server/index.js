@@ -130,9 +130,9 @@ app.get("/items", (req, res) => {
 });
 
 
-// app.use((req,res,next)=>{
-//   res.sendFile(path.resolve(__dirname,'public','index.html'))
-// })
+app.use((req,res,next)=>{
+  res.sendFile(path.resolve(__dirname,'public','index.html'))
+})
 
 const PORT = process.env.PORT || 8888;
 
