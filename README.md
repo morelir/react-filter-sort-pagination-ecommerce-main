@@ -1,5 +1,5 @@
 
-<h1 align="center" style="border-bottom: none"><a href="https://react-filter-sort-pagination-ecommerce.onrender.com/" target="_blank">React-Filter-Sort-Search-Pagination-Ecommerce</a> </h1>
+<h1 align="center" style="border-bottom: none"><a href="https://react-filter-sort-pagination-ecommerce.onrender.com/" target="_blank">Ecommerce Filter Application</a> </h1>
 </br>
 
 ## ***About***
