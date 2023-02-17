@@ -11,30 +11,8 @@ import Pagination from "components/Pagination";
 export default function App() {
   const [search, setSearch] = useSearchParams();
   const getItems = useItems();
-  const items = useMemo(() => getItems.data?.products ?? [], [getItems.data]);
-  // const itemCounts = useMemo(
-  //   () =>
-  //     items.reduce<Record<string, number>>((initial, item) => {
-  //       if (!isNaN(initial[item.category])) {
-  //         initial[item.category] += 1;
-  //       } else {
-  //         initial[item.category] = 1;
-  //       }
-
-  //       return initial;
-  //     }, {}),
-  //   [items]
-  // );
   const maxPrice = (getItems.data?.maxPrice ?? 0) / 100;
 
-  // useEffect(() => {
-  //   console.log(search)
-  //   if(search.get('page') && )
-  //   search.delete('page');
-  //   setSearch(search, {
-  //     replace: true,
-  //   });
-  // }, [search]);
 
   return (
     <div className="mw9 center ph4 pb4 bg-white min-vh-100 br bl b--light-gray">

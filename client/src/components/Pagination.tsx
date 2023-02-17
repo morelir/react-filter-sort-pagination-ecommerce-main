@@ -45,8 +45,6 @@ const Pagination = ({
   next: Next | undefined;
 }) => {
   const [search, setSearch] = useSearchParams();
-
-  // +useLocation().state?.page || 1;
   const [pages, setPages] = useState<
     React.LinkHTMLAttributes<HTMLLinkElement>[]
   >([]);
@@ -58,7 +56,6 @@ const Pagination = ({
   
 
   const pageClickHandler = async (page: number) => {
-    // window.scrollTo({top: 0, left: 0});
     search.set("page", page.toString());
     setSearch(search, {
       replace: true,
