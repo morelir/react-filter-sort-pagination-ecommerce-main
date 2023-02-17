@@ -87,14 +87,6 @@ export default function App() {
 
         <ItemsContainer />
       </div>
-      {/* {getItems.data && (
-        <Pagination
-          currentPage={getItems.data!.page}
-          next={getItems.data?.next}
-          previous={getItems.data?.previous}
-          totalPages={getItems.data!.totalPages}
-        />
-      )} */}
     </div>
   );
 }
