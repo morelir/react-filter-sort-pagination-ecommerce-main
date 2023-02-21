@@ -17,5 +17,8 @@ A simple ecommerce web app developed with **React.js** at the client side and **
 
 ![image](https://user-images.githubusercontent.com/58606266/218529778-6386a7e2-a757-49ec-9684-9ec797f6dc5c.png)
 
-
-
+## Stack
+- React.js 
+- TypeScript
+- React Query
+- Node.js
