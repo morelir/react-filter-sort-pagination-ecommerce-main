@@ -1,6 +1,8 @@
 
-<h1 align="center" style="border-bottom: none"><a href="https://react-filter-sort-pagination-ecommerce.onrender.com/" target="_blank">Ecommerce Filter Application</a> </h1>
+<h1 align="center" style="border-bottom: none">Ecommerce Filter Application</h1>
 </br>
+
+<p align='center'>🎉 The app is live, try it <a href="https://react-filter-sort-pagination-ecommerce.onrender.com/" target="_blank">here</a>. </p>
 
 ## ***About***
 A simple ecommerce web app developed with **React.js** at the client side and **Node.js** at the server side.
